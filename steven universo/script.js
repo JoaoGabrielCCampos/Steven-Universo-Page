@@ -1,1 +1,0 @@
-Foi mal Gilberto sou designer😞
