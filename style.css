@@ -59,13 +59,6 @@ img:hover {
     height: auto;
 }
 
-.corpo {
-    max-width: 1000px;
-    background-color: rgb(255, 155, 155);
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
-
 body {
     padding-left: 200px;
     padding-right: 200px;
@@ -128,17 +121,30 @@ h2{
     color: rgb(255, 46, 63);
 }
 footer{
-    background-color: rgb(255, 46, 63);
-     padding: 20px 0;
-     text-align: center;
-     height: 60px;
-    max-width:1000px;
-    }
+    background-color: rgb(255, 46, 63);
+    padding: 20px 0;
+    text-align: center;
+    /* ESTES DOIS SÃO OS AJUSTES CHAVE */
+    /* 1. Margens negativas para compensar o padding de 30px do .corpo */
+    margin: 0 -30px; 
+    /* 2. Remove o espaço na parte inferior do .corpo que pode estar sendo causado pelo margin-bottom */
+    margin-bottom: -30px; 
+}
 
 footer p{
-    font-family: Hepta Slab ;
-    color: rgb(255, 228, 248);
+    font-family: Hepta Slab ;
+    color: rgb(255, 228, 248);
+    /* Garante que o texto fique centralizado verticalmente se precisar de mais espaço */
+    margin: 0; 
 }
+
+.corpo {
+    max-width: 1000px;
+    background-color: rgb(255, 155, 155);
+    padding: 30px; /* O padding de 30px é compensado pelo margin: 0 -30px no footer */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
 
 
 
