@@ -132,12 +132,14 @@ footer{
      padding: 20px 0;
      text-align: center;
      height: 60px;
+    max-width:1000px;
     }
 
 footer p{
     font-family: Hepta Slab ;
     color: rgb(255, 228, 248);
 }
+
 
 
 
